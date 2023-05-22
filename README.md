@@ -1438,6 +1438,380 @@ To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
    68716d2..5b6cfb3  ft/home-page-redesign -> ft/home-page-redesign
 ```
 
+### Exercise 2
+
+``` bash
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git add .; git commit -m "updates in home page"
+[ft/footer b02ba1e] updates in home page
+ 1 file changed, 2 insertions(+)
+g
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git push origin footer
+error: src refspec footer does not match any
+error: failed to push some refs to 'https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git remote push origin footer
+error: unknown subcommand: `push'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/ft/footer
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      ft/footer -> ft/footer
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git add .
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git commit -m "new updates on home page"
+[ft/footer b7aaa22] new updates on home page
+ 1 file changed, 3 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git push origin ft/footer
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+   b02ba1e..b7aaa22  ft/footer -> ft/footer
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch ft/squashing
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+  ft/footer
+  ft/home-page-redesign
+  ft/squashing
+  ft/team-page
+* main
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (main)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/footer)
+$ git checkout ft/squashing
+Switched to branch 'ft/squashing'
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git merge squash ft/footer
+merge: squash - not something we can merge
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git merge-squash ft/footer
+git: 'merge-squash' is not a git command. See 'git --help'.
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git merge --sqaush ft/footer
+error: unknown option `sqaush'
+usage: git merge [<options>] [<commit>...]
+   or: git merge --abort
+   or: git merge --continue
+
+    -n                    do not show a diffstat at the end of the merge
+    --stat                show a diffstat at the end of the merge
+    --summary             (synonym to --stat)
+    --log[=<n>]           add (at most <n>) entries from shortlog to merge commit message
+    --squash              create a single commit instead of doing a merge
+    --commit              perform a commit if the merge succeeds (default)
+    -e, --edit            edit message before committing
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --ff                  allow fast-forward (default)
+    --ff-only             abort if fast-forward is not possible
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --verify-signatures   verify that the named commit has a valid GPG signature
+    -s, --strategy <strategy>
+                          merge strategy to use
+    -X, --strategy-option <option=value>
+                          option for selected merge strategy
+    -m, --message <message>
+                          merge commit message (for a non-fast-forward merge)
+    -F, --file <path>     read message from file
+    --into-name <name>    use <name> instead of the real target
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --abort               abort the current in-progress merge
+    --quit                --abort but leave index and working tree alone
+    --continue            continue the current in-progress merge
+    --allow-unrelated-histories
+                          allow merging unrelated histories
+    --progress            force progress reporting
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    --autostash           automatically stash/stash pop before and after
+    --overwrite-ignore    update ignored files (default)
+    --signoff             add a Signed-off-by trailer
+    --no-verify           bypass pre-merge-commit and commit-msg hooks
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git merge --squash ft/footer
+Updating d99f579..b7aaa22
+Fast-forward
+Squash commit -- not updating HEAD
+ home.html | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git log
+commit d99f57954fff0e41cd7b9216b90179e707c86467 (HEAD -> ft/squashing, origin/main, git-copy/main, main)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 15:31:09 2023 +0300
+
+    new changes in the home page
+
+commit 3c4924b356f062f3ab26c00b31314a3437391aec
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 15:06:50 2023 +0300
+
+    Bundle 3 Exercise 2
+
+commit 847dfe42d73c1d1f6576f04bae6ec9cdd6c76309
+Merge: 6f7fbfc 6719a64
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 14:50:35 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 6f7fbfc51b79ec39a185a7a1cf3a303148d6c240
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 14:50:06 2023 +0300
+
+    changes on the services page
+
+commit 6719a6452b86382f3663c30a346f532025d348c4
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 14:46:32 2023 +0300
+
+    Bundle 3 Exercise 1
+
+commit 7e9c4464145c3c3fe7ebceef863b79e9bad2b5ae
+Merge: aef25f1 7196695
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 12:48:28 2023 +0300
+
+    Merge pull request #7 from DidierShemaGatete/ft/team-page
+
+    Ft/team page
+
+commit 719669546a39d6e13a59c22f0614faba6aefb818 (origin/ft/team-page, ft/team-page)
+Merge: 50e295b 321a71c
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 12:19:54 2023 +0300
+
+    deleting services page
+
+commit 50e295bde1ae369305e2a5c3851dbb9d967088de
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:59:16 2023 +0300
+
+    created team page
+
+commit 1aa39746dfb479027d727b55a5123ad3e3d62076
+Merge: 2d30dc8 aef25f1
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:56:04 2023 +0300
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 321a71c76b6ae1cfc964b6888c54658d9b48cad4
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.html
+
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 25a971d] footer changes squashing
+ 1 file changed, 5 insertions(+)
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+$ git push origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions./pull/new/ft/squashing
+remote:
+To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
+ * [new branch]      ft/squashing -> ft/squashing
+
+H S Sergio@EngDavidprobook MINGW64 ~/Desktop/GIT_Exercise (ft/squashing)
+
+
+```
+
 
 
 
