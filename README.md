@@ -1437,6 +1437,171 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions..git
    68716d2..5b6cfb3  ft/home-page-redesign -> ft/home-page-redesign
 ```
+## Bundle 4
+### Exercise 1
+``` bash
+commit d99f57954fff0e41cd7b9216b90179e707c86467 (HEAD -> ft/squashing, origin/main, git-copy/main, main)
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 15:31:09 2023 +0300
+
+    new changes in the home page
+
+commit 3c4924b356f062f3ab26c00b31314a3437391aec
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 15:06:50 2023 +0300
+
+    Bundle 3 Exercise 2
+
+commit 847dfe42d73c1d1f6576f04bae6ec9cdd6c76309
+Merge: 6f7fbfc 6719a64
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 14:50:35 2023 +0300
+
+    Merge branch 'main' of https://github.com/DidierShemaGatete/Gym-Git-Exercise-Solutions.
+
+commit 6f7fbfc51b79ec39a185a7a1cf3a303148d6c240
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 14:50:06 2023 +0300
+
+    changes on the services page
+
+commit 6719a6452b86382f3663c30a346f532025d348c4
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 14:46:32 2023 +0300
+
+    Bundle 3 Exercise 1
+
+commit 7e9c4464145c3c3fe7ebceef863b79e9bad2b5ae
+Merge: aef25f1 7196695
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Mon May 22 12:48:28 2023 +0300
+
+    Merge pull request #7 from DidierShemaGatete/ft/team-page
+
+    Ft/team page
+
+commit 719669546a39d6e13a59c22f0614faba6aefb818 (origin/ft/team-page, ft/team-page)
+Merge: 50e295b 321a71c
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Mon May 22 12:19:54 2023 +0300
+
+    deleting services page
+
+commit 50e295bde1ae369305e2a5c3851dbb9d967088de
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:59:16 2023 +0300
+
+    created team page
+
+commit 1aa39746dfb479027d727b55a5123ad3e3d62076
+Merge: 2d30dc8 aef25f1
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:56:04 2023 +0300
+
+    Merge branch 'main' into ft/service-redesign
+
+commit 321a71c76b6ae1cfc964b6888c54658d9b48cad4
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Sat May 20 16:45:59 2023 +0300
+
+    removing services file
+
+commit 556e7c677e6767808c3c9ebeba20b8b0ab7cc202
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 20:49:58 2023 +0300
+
+    new team page
+
+commit aef25f10c1745e140283380a4312422c5608e5d9
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 16:09:18 2023 +0300
+
+    The Gym git Exercise
+
+    Bundle 2 bash commands
+
+commit cb781ef2299a58b0d66d6815f1766a3f16770013 (origin/ft/service-redesign)
+Merge: 0eb6ff1 2d30dc8
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:49:55 2023 +0300
+
+    resolve merge conflict
+
+commit 2d30dc88b500f496383ae07190c83ee4439b03a2
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:18:20 2023 +0300
+
+    inline modification of service page
+
+commit 741c0b735616b4fc674379afcd16c805089ffd5b
+Merge: 9985d31 0eb6ff1
+Author: DidierShemaGatete <122377873+DidierShemaGatete@users.noreply.github.com>
+Date:   Tue May 16 15:10:50 2023 +0300
+
+    Merge pull request #4 from DidierShemaGatete/ft/service-redesign
+
+    change on services page
+
+commit 0eb6ff1d19230e968c2ba85776e0ebb430fa41ba
+Author: DidierShemaGatete <didiershemagate01@gmail.com>
+Date:   Tue May 16 15:08:09 2023 +0300
+
+    modification on services page
+
+commit 9985d311f61a0263198b8fa4a0ccc670c8b2e25e
+
+
+
+```
+
 
 ### Exercise 2
 
